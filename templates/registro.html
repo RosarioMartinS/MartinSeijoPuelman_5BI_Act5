@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+<br>
+{% block navegacion %}{% endblock %}
+
+{% block contenido %} 
+<h1>Registrate</h1>
+<form method="POST" action="{{ url_for('crearUsuario')}}">
+      <input name="nombre" placeholder="Nombre" type="text" required>
+      <br><input name="contraseña" placeholder="Contraseña" type="password" required>
+      <br><button name="boton" value="registro" type="submit">Crear</button>
+      
+
+    </form>
+{% endblock %}

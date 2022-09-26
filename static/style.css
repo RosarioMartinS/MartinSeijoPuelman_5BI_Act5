@@ -1,0 +1,48 @@
+body {
+  font-family:Arial;
+}
+nav{
+  display: flex;
+  background-color:  #ec9532;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+li {
+  display:inline;
+  list-style: none;
+  
+}
+li :hover{
+  background-color: #ffb561;
+  
+}
+a{
+  text-decoration:none;
+  color: #ffffff;
+  margin: 30 px;
+  padding:30px;
+}
+#registro {
+  color: #000000ff
+}
+
+table {
+    width:100%;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+
+}
+
+td, tr {
+    border: black 1px solid;
+    height: 100px;
+    width:50px
+}

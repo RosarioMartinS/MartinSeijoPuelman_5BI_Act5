@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+<br>
+{% block contenido %}
+<h1 style="text-align: center;">Tablero {{tab + 1}}</h1>
+
+
+<table id="tabla">
+  <tbody>
+    {% for i in range(cantFilas) %}
+    <tr>
+      {% for j in range(cantColum)%}
+      <td style="border: black 1px solid; text-align: center;"><p>
+      {% for row in lista%}
+      {% if session["nombre"]=="admin"%}
+      {% if row.numeroFila == i %}
+      
+        {% if row.numeroColumna == j%}
+          
+        {{row.valor}}
+        
+        {% endif %}
+  
+      {% endif %} 
+      {% endif %}
+      {% endfor %}
+   
+    </p></td> 
+    {% endfor %}
+    </tr>
+    {% endfor %}
+
+  </tbody>
+</table>
+
+
+{% endblock %}
