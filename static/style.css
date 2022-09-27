@@ -3,7 +3,7 @@ body {
 }
 nav{
   display: flex;
-  background-color:  #ec9532;
+  background-color: #c68fd6;
   justify-content: space-evenly;
   margin: 0px;
 }
@@ -13,7 +13,7 @@ li {
   
 }
 li :hover{
-  background-color: #ffb561;
+  background-color: #682e7a;
   
 }
 a{
@@ -42,7 +42,10 @@ th {
 }
 
 td, tr {
-    border: black 1px solid;
+    border: #a3525f 3px solid;
+    border-radius: 25px;
     height: 100px;
-    width:50px
+    width:50px;
+    background: pink;
+    text-align: center;
 }

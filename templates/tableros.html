@@ -9,7 +9,7 @@
     {% for i in range(cantFilas) %}
     <tr>
       {% for j in range(cantColum)%}
-      <td style="border: black 1px solid; text-align: center;"><p>
+      <td><p>
       {% for row in lista%}
       {% if session["nombre"]=="admin"%}
       {% if row.numeroFila == i %}
